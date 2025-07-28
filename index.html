@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist de Mudança</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏡 Checklist de Mudança a Dois</h1>
+        <p>Marque os itens que vocês já têm ou compraram. Adicione novos itens conforme a necessidade.</p>
+        
+        <div id="checklist">
+            </div>
+
+        <div class="add-item-form">
+            <input type="text" id="novoItemInput" placeholder="Digite um novo item...">
+            <select id="categoriaSelect">
+                </select>
+            <button onclick="adicionarItem()">Adicionar Item</button>
+        </div>
+
+        <div class="actions">
+            <button onclick="gerarPlanilha()">📊 Gerar Planilha (CSV)</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
